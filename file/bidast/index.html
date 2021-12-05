@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بیدست</title>
+  <link rel="stylesheet" href="./file/handsfree.css" />
+  <script src="./file/handsfree.js"></script>
+<style>
+@font-face {
+    font-family: 'Vazir';
+    src:url(./file/handsfree.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.navbar {
+  height: 64px;	
+  background-color: #ffffff;	
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.21);
+}
+
+.body {
+  font-family: "Vazir";
+  display: contents;
+  text-style: none;
+}
+
+.index {
+  float: none;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.nav-logo {
+display: block;
+width:130px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 12px;
+}
+
+.notice {
+  width:32px;
+  display:block;
+}
+
+nav ul{
+    list-style: none; padding: 0;
+  }
+nav ul li{
+    display: inline-block;
+  }
+nav ul li:not(:first-child) {
+      padding-right: 7px;
+      border-right: 1px solid #ccc;
+      padding-left: 5px;
+  }
+
+@media only screen and (max-width:3000px) {
+
+  .index {
+    margin-top:5%;
+    text-align: justify;
+    width: 50%;
+    padding: 60px;
+    border: 1px solid #000000;	
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    direction: rtl;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .menu, .index, .right {
+    width: 80%;
+    padding:28px;
+    direction: rtl;
+  }
+}
+a {
+    text-decoration: none;
+    color: rgb(1, 106, 138);
+}
+</style>
+</head>
+<body class="body">
+<script>
+    const handsfree = new Handsfree({hands: true})
+    handsfree.enablePlugins('browser')
+    handsfree.start()
+</script>
+<div class="index">
+<h1>بیدست</h1>
+<p>این ابزار با یه تعداد اسکریپت ساده و چند نمونه تصویر دست انسان ساخته شده و می‌تونه با استفاده از دوربین دستگاه شما، حرکات دست رو تشخیص بده. متاسفانه در حال حاضر وقت و حوصله کافی برای توسعه این AI ندارم. اگه اشکالی مشاهده کردید خوش‌حال میشم بهم ایمیل بزنین.</p>
+   <nav class="container">
+<ul>
+<li><a class="" href="mailto:ra@rezaadabi.ir">ایمیل</a></li>
+<li><a class="" href="https://github.com/radabi">گیت‌هاب</a></li>
+</ul>
+</nav>
+</div>
+<br/>
+</body></html>
